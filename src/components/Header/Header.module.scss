@@ -1,0 +1,162 @@
+.header {
+  padding: 15px 0;
+  display: flex;
+  max-height: 72px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: auto;
+  transition: all 0.3s;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  box-shadow: 0 20px 50px -2px rgba(0, 0, 0, 0.1);
+
+  &::after {
+    content: '';
+    height: 12px;
+    backdrop-filter: blur(2px);
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 72px;
+  }
+}
+
+.header_open {
+  max-height: 260px;
+  transition: all 0.3s;
+  @media screen and (max-width: 768px) {
+    height: 260px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-right: 12px;
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.25s;
+
+      &:hover {
+        color: var(--primary);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.inner {
+  display: flex;
+  position: inherit !important;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    .nav,
+    .buttons {
+      display: none;
+    }
+  }
+}
+
+.open {
+  background-color: #fff;
+  max-height: 220px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  transition: min-height 0.3s ease-in;
+}
+
+.menu {
+  width: 58%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @media screen and (max-width: 1220px) {
+    width: 62%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 65%;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 72px;
+    z-index: 100;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    height: 100%;
+
+    .nav,
+    .buttons {
+      width: 100%;
+    }
+  }
+}
+
+.opened {
+  max-height: 220px;
+  transition: max-height 0.2s ease-in;
+
+  .nav,
+  .buttons {
+    width: 100%;
+    display: flex;
+    position: absolute;
+  }
+
+  .nav {
+    top: 6%;
+    width: 100%;
+
+    .list {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+
+      li {
+        margin-bottom: 8px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .buttons {
+    top: 60%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

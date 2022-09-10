@@ -1,0 +1,18 @@
+.brands_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 24px;
+  width: 100%;
+
+  @media screen and (max-width: 1220px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 428px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

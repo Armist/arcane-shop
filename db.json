@@ -1,0 +1,87 @@
+{
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "password": "test123"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Brands",
+      "img": "",
+      "path": "/brands"
+    },
+    {
+      "id": 2,
+      "title": "Catalog",
+      "img": "",
+      "path": "/catalog/all"
+    },
+    {
+      "id": 3,
+      "title": "Man",
+      "img": "",
+      "path": "/catalog/man"
+    },
+    {
+      "id": 4,
+      "title": "Woman",
+      "img": "",
+      "path": "/catalog/woman"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "title": "Nike",
+      "img": "https://justcreative.com/wp-content/uploads/2022/01/Nike-Logo-600x400.png.webp"
+    },
+    {
+      "id": 2,
+      "title": "Adidas",
+      "img": "https://justcreative.com/wp-content/uploads/2022/01/Adidas-Logo-600x400.png.webp"
+    },
+    {
+      "id": 3,
+      "title": "Reebok",
+      "img": "data:image/png;base64,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"
+    },
+    {
+      "id": 4,
+      "title": "Puma",
+      "img": "https://seeklogo.com/images/P/puma-logo-83461F7DDB-seeklogo.com.png"
+    },
+    {
+      "id": 5,
+      "title": "Vans",
+      "img": "https://justcreative.com/wp-content/uploads/2022/01/Vans-Logo-600x400.png.webp"
+    },
+    {
+      "id": 6,
+      "title": "New Balace",
+      "img": "https://brandongaille.com/wp-content/uploads/2014/01/14-Best-Sportswear-Company-Logos-and-Brands.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Converse",
+      "img": "https://seeklogo.com/images/C/converse-logo-035A5F5D0A-seeklogo.com.png"
+    },
+    {
+      "id": 8,
+      "title": "Lacoste",
+      "img": "https://seeklogo.com/images/L/lacoste-logo-3D1D28F751-seeklogo.com.png"
+    }
+  ],
+  "sneakers": [
+    {
+      "id": 1,
+      "title": "Nike Air Force 1",
+      "description": "blablablablablablablablablablablablablablablablablablablablablablablablablabla",
+      "brand": 1,
+      "category": 1,
+      "img": [],
+      "price": 1000
+    }
+  ]
+}
