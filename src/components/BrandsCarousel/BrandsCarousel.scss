@@ -1,0 +1,13 @@
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--primary) !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: var(--primary) !important;
+}

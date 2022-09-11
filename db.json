@@ -8,27 +8,13 @@
   "categories": [
     {
       "id": 1,
-      "title": "Brands",
-      "img": "",
-      "path": "/brands"
+      "title": "Man",
+      "img": "https://brooklynstore.com.ua/content/images/46/muzhskie-krossovki-nike-air-force-1-07-lv8-utility-white-0-58330843966892_small11.jpg"
     },
     {
       "id": 2,
-      "title": "Catalog",
-      "img": "",
-      "path": "/catalog/all"
-    },
-    {
-      "id": 3,
-      "title": "Man",
-      "img": "",
-      "path": "/catalog/man"
-    },
-    {
-      "id": 4,
       "title": "Woman",
-      "img": "",
-      "path": "/catalog/woman"
+      "img": "https://a.allegroimg.com/s720/116a5c/cab426944721b7fb2da33d36f3bb/SNEAKERSY-DAMSKIE-NIKE-AIR-FORCE-1-07-NEXT-NATURE-Material-zewnetrzny-inny"
     }
   ],
   "brands": [

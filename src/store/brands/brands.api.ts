@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/dist/query/react';
-import { IBrand } from '../../models/brands';
+import { IBrand } from '../../models/IBrand';
 
 export const brandsApi = createApi({
   reducerPath: 'brands',

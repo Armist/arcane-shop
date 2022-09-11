@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { ICategory } from '../../models/categories';
+import { ICategory } from '../../models/ICategory';
 
 export const categoriesApi = createApi({
   reducerPath: 'categories',

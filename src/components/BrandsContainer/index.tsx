@@ -17,7 +17,7 @@ const BrandsContainer = () => {
   }, [time]);
 
   return (
-    <div className={s.brands_container}>
+    <div className={s.container}>
       {isLoading ? <Loader /> : ''}
       {data && data.map((item) => <BrandsItem key={item.id} brand={item} />)}
     </div>

@@ -3,6 +3,8 @@
   --white: #fff;
   --primary: #24c4fc;
   --primary-darken: #1e96c2;
+  --shadow-lg: 0 8px 50px -2px rgba(36, 196, 252, 0.2);
+  --shadow-sm: 0 10px 12px -2px rgba(36, 196, 252, 0.2);
 }
 
 * {

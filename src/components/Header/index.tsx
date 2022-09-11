@@ -1,16 +1,38 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
-import {useSearchCategoriesQuery} from '../../store/categories/categories.api';
 import {Button} from '../Button';
 import Container from '../Container';
 import {Burger} from './Burger';
 import {Logo} from './Logo';
+import {ILink} from "../../models/ILink";
 
 import s from './Header.module.scss';
 
 export const Header = () => {
     const [open, setOpen] = useState(false);
-    const {data} = useSearchCategoriesQuery('');
+    const links: ILink[] = [
+        {
+            id: 1,
+            path: "/brands",
+            title: "Brands"
+        },
+        {
+            id: 2,
+            path: "/catalog/all",
+            title: "Catalog"
+        },
+        {
+            id: 3,
+            title: "Man",
+            path: "/catalog/man"
+        },
+        {
+            id: 4,
+            title: "Woman",
+            path: "/catalog/woman"
+        }
+    ]
+
 
     return (
         <header className={`${s.header} ${open ? s.header_open : ''}`}>
@@ -21,7 +43,7 @@ export const Header = () => {
                     <div className={`${s.menu} ${open ? s.opened : ''}`}>
                         <nav className={s.nav}>
                             <ul className={s.list}>
-                                {data?.map((item) => (
+                                {links.map((item) => (
                                     <li key={item.id}>
                                         <Link to={`${item.path}`}>{item.title}</Link>
                                     </li>

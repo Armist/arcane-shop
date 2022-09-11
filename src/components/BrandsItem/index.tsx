@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import s from './BrandsItem.module.scss';
-import { IBrand } from '../../models/brands';
+import { IBrand } from '../../models/IBrand';
 
 interface BrandsItemProps {
   brand: IBrand;
