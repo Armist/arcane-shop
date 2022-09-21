@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrandsContainer } from '../../components/BrandsContainer';
-import Container from '../../components/Container';
+import {Container} from '../../components/Container';
 import { PageTitle } from '../../components/PageTitle';
 
 const Brands = () => {

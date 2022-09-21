@@ -1,0 +1,14 @@
+.icon {
+  margin-right: 12px;
+  fill: var(--white);
+  cursor: pointer;
+  transition: fill .25s linear;
+
+  &:hover {
+    fill: var(--primary);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

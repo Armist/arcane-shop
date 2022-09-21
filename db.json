@@ -5,6 +5,24 @@
       "password": "test123"
     }
   ],
+  "socials": [
+    {
+      "id": 1,
+      "title": "VK",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "title": "Telegram",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "title": "GitHub",
+      "img": ""
+    }
+  ]
+  ,
   "categories": [
     {
       "id": 1,
